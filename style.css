@@ -1,0 +1,22 @@
+:root { --ink: #2a1a0c; --paper: #f6ecd6; --gold: #e8a83a; --night: #141b2e; --muted: #6b5a44; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 Georgia, "Iowan Old Style", serif; }
+a { color: #9a5a10; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+header.hero { position: relative; min-height: 70vh; display: flex; align-items: flex-end; color: #fff6e0;
+  background: var(--night) url(hero.jpg) center/cover no-repeat; }
+header.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,12,24,.88), rgba(10,12,24,.15) 60%); }
+header.hero .wrap { position: relative; z-index: 1; padding-bottom: 40px; }
+.brand { display: flex; align-items: center; gap: 16px; }
+.brand img { width: 84px; height: 84px; border-radius: 20px; box-shadow: 0 6px 20px rgba(0,0,0,.4); }
+h1 { font-size: 44px; line-height: 1.1; margin: 0; }
+.tag { font-size: 20px; margin: 12px 0 0; color: #ffe2a0; }
+.cta { display: inline-block; margin-top: 20px; padding: 12px 22px; border-radius: 999px; background: var(--gold); color: var(--ink);
+  font-weight: bold; text-decoration: none; }
+section { padding: 40px 0 8px; }
+h2 { font-size: 26px; margin: 0 0 8px; }
+ul { padding-left: 20px; }
+.art { width: 100%; border-radius: 14px; margin: 16px 0; display: block; }
+footer { padding: 40px 0; color: var(--muted); font-size: 15px; }
+.page h1 { font-size: 34px; padding-top: 40px; }
+.page .top { padding-top: 24px; }
